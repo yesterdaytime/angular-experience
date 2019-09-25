@@ -1,18 +1,9 @@
 <section>
     <div class="title">This display that the ng-template is included in different component</div>
-    <div>
-        <button class="btn blue" (click)="changeLayout()">switch the layout</button>
-    </div>
-
-    <ng-container *ngIf="this.layoutHorizontal">
-        <app-template-a></app-template-a>
-    </ng-container>
-    <ng-container *ngIf="!this.layoutHorizontal">
-        <app-template-b></app-template-b>
-    </ng-container>
+    <app-template-include></app-template-include>
 </section>
 
 <section>
-    <div class="title"></div>
-
+    <div class="title">This is test the ng-template in the ng-content</div>
+    <app-template-content></app-template-content>
 </section>

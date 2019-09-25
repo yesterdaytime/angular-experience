@@ -1,12 +1,10 @@
-<!-- This component only have the template -->
+<div>
+    <button class="btn blue" (click)="changeLayout()">switch the layout</button>
+</div>
 
-<ng-template #shared1 let-hello="hello">
-    <div>This is shared1 template, this use the customer key</div>
-    <div>{{hello}}</div>
-</ng-template>
-
-<ng-template #shared2 let-hello>
-    <div>This is shared2 template, this use the defualt key</div>
-    <div>{{hello}}</div>
-</ng-template>
-
+<ng-container *ngIf="this.layoutHorizontal">
+    <app-template-a></app-template-a>
+</ng-container>
+<ng-container *ngIf="!this.layoutHorizontal">
+    <app-template-b></app-template-b>
+</ng-container>

@@ -9,13 +9,7 @@ export class TemplateTestComponent implements OnInit {
 
     constructor() { }
 
-    layoutHorizontal = true;
-
     ngOnInit() {
-    }
-
-    changeLayout() {
-        this.layoutHorizontal = !this.layoutHorizontal;
     }
 
 }

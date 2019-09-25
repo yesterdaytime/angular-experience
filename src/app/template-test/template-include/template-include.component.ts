@@ -6,17 +6,20 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-template-include',
-  templateUrl: './template-include.component.html',
-  styleUrls: ['./template-include.component.scss']
+    selector: 'app-template-include',
+    templateUrl: './template-include.component.html',
+    styleUrls: ['./template-include.component.scss']
 })
 export class TemplateIncludeComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  @ViewChild('shared1') shared1: ElementRef;
-  @ViewChild('shared2') shared2: ElementRef;
+    layoutHorizontal = true;
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    changeLayout() {
+        this.layoutHorizontal = !this.layoutHorizontal;
+    }
 }

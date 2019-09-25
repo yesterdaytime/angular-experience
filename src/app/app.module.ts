@@ -10,6 +10,7 @@ import { TemplateAComponent } from './template-test/template-include/template-a/
 import { TemplateBComponent } from './template-test/template-include/template-b/template-b.component';
 import { TemplateChildComponent } from './template-test/template-content/template-child/template-child.component';
 import { CommonModule } from '@angular/common';
+import { TemplateSharedComponent } from './template-test/template-include/template-shared/template-shared.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CommonModule } from '@angular/common';
     TemplateContentComponent,
     TemplateAComponent,
     TemplateBComponent,
-    TemplateChildComponent
+    TemplateChildComponent,
+    TemplateSharedComponent,
   ],
   imports: [
     BrowserModule,
