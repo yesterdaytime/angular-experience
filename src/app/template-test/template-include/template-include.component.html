@@ -1,0 +1,12 @@
+<!-- This component only have the template -->
+
+<ng-template #shared1 let-hello="hello">
+    <div>This is shared1 template, this use the customer key</div>
+    <div>{{hello}}</div>
+</ng-template>
+
+<ng-template #shared2 let-hello>
+    <div>This is shared2 template, this use the defualt key</div>
+    <div>{{hello}}</div>
+</ng-template>
+

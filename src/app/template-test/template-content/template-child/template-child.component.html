@@ -1,0 +1,11 @@
+<div>We want to change page in the father page and choose different display base on the input</div>
+
+<ng-container *ngFor="let item of this.query">
+    <ng-container *ngTemplateOutlet="item"></ng-container>
+</ng-container>
+
+<ng-content></ng-content>
+
+<!--
+    <ng-content select="[name]"></ng-content>
+ -->

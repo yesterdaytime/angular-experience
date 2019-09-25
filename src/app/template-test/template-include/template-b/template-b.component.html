@@ -1,0 +1,7 @@
+<div class="flex-vertical">
+    <ng-container *ngTemplateOutlet="sharedTemplate.shared1; context: this.customer"></ng-container>
+
+    <ng-container *ngTemplateOutlet="sharedTemplate.shared2; context: this.default"></ng-container>
+</div>
+
+<app-template-include #sharedTemplate></app-template-include>
